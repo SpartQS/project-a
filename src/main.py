@@ -1,16 +1,11 @@
-from models import Task
-from utils import print_tasks
-
+from project_b_utils import (
+    get_current_date,
+    reverse_string
+)
 
 def main():
-    tasks = [
-        Task("Изучить Git"),
-        Task("Выполнить лабораторную работу"),
-        Task("Создать отчёт")
-    ]
-
-    print("Список задач:")
-    print_tasks(tasks)
+    print("Дата:", get_current_date())
+    print("Текст:", reverse_string("Git Laboratory"))
 
 
 if __name__ == "__main__":
